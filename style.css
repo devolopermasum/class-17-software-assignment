@@ -1,0 +1,345 @@
+/* ====DEFAULT CSS START==== */
+*{
+    margin: 0;
+    padding:0;
+}
+body,h1,h2,h3,h4,h5,h6,p,span,section,a{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.full-website{
+    width: 1200px;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* ======MAIN CSS START====== */
+.header{
+    background-color: black;
+    padding: 6px 0px;
+}
+.header-logo img{
+    width: 80px;
+}
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	line-height: 44px;
+	font-size: 20px;
+}
+.header-menu ul li:hover > a{
+    text-decoration: underline;
+}
+/* ====DROPDOWN PART====== */
+.menu ul li ul{
+    position: absolute;
+    top: 115%;
+    left: -10%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    width: 250px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin:top center;
+    transition: .5s;
+}
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+    background-color: black;
+    padding: 5px 10px;
+}
+.menu ul li ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+/* ======BANNER SECTION START======= */
+.banner{
+    background: url(https://i.ibb.co/q7crnCZ/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.banner-content h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.banner-content h3 {
+	font-size: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.banner-content .button-1{
+    background-color: black;
+    padding: 20px 35px;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .5s;
+    border:2px solid black;
+}
+.banner-content .button-1:hover{
+    background-color: #fff;
+    border:2px solid black;
+    color: black;
+}
+.banner-content .button-2{
+    background-color: white;
+    padding: 20px 35px;
+    color: black;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 15px;
+    transition: .5s;
+}
+.banner-content .button-2:hover{
+    background-color: black;
+    color: white;
+}
+/* ======ABOUT SECTION START======= */
+.about{
+    background-color:#87a471;
+    padding: 50px 0px;
+}
+.about h1 {
+	color: rgba(241, 227, 227, 0.708);
+	font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 2px 0px 4px;
+    position: relative;
+}
+.about h1::before {
+	content: "";
+	height: 3px;
+	width: 24%;
+	background-color: rgba(241, 227, 227, 0.708);
+	position: absolute;
+	bottom: -10px;
+	left: 38%;
+}
+.about-content{
+    width:50%;
+    color: white;
+}
+.about-image{
+    width: 50%;
+    text-align: right;
+}
+.about-image img{
+    width: 280px;
+}
+/* ======SERVICE SECTION START======= */
+.service{
+    background-color: #606a64;
+    color: white;
+    padding: 50px 0px;
+}
+.service-content{
+    width: 70%;
+    margin:auto;
+}
+.service-content h1{
+    color: rgba(241, 227, 227, 0.708);
+	font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 0px 4px;
+    position: relative;
+}
+.service-content h1::before{
+    content: "";
+    height: 3px;
+    width: 40%;
+    background-color: rgba(241, 227, 227, 0.708);
+    position: absolute;
+    bottom: -10px;
+    left: 30%;
+}
+.service-content h2{
+    color: rgba(246, 241, 241, 0.708);
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.service-content p{
+    line-height: 30px;
+}
+.service-box-content {
+	background-color: #fff;
+	width: 30%;
+	color: black;
+	margin-top: 50px;
+	border-radius: 10px;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+.service-box-content.mid{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.sb-image{
+    width: 20%;
+}
+.sb-image img{
+    width: 35px;
+}
+.sb-content{
+    width: 78%;
+}
+.sb-content h2{
+    margin-bottom: 10px;
+}
+/* =======IMAGE SECTION START======= */
+.image{
+    background-color: #87a471;
+    padding: 100px 0px 50px 0px;
+}
+.image h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.image h2{
+    color: rgba(255, 255, 255, 0.68);
+}
+.image .card-row-1{
+    width: 48%;
+    border: 2px solid #ddd;
+    margin: 70px 0px 10px 0px;
+}
+.image .card-row-1 img{
+    width: 100%;
+}
+.image .card-row-1 h2{
+    padding:10px;
+}
+.image .card-row-1 h2{
+    color: rgba(90, 90, 130, 0.778);
+}
+.image .card-row-1 span{
+    font-size: 30px;
+    display: inline-block;
+    color: white;
+    padding-bottom: 20px;
+}
+.image .card-row-2{
+    width: 23%;
+    margin:40px 10px;
+}
+/* =====TEAM SECTION START===== */
+.team{
+    background-color: #5b9776;
+    padding: 50px 0px;
+}
+.team h1{
+    color:white;
+	font-size: 37px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.team h1::before{
+    content: "";
+    height: 3px;
+    width: 28%;
+    background-color: rgba(241, 227, 227, 0.708);
+    position: absolute;
+    bottom: -10px;
+    left: 36%;
+}
+.team-content{
+    width: 30%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin: auto;
+}
+.team-icon{
+    margin-left: -20%;
+    margin-top: 10px;
+}
+.team-content span{
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+}
+.team-content i:hover{
+    color:#294766 ;
+    transform: scale(.9);
+    cursor: pointer;
+    transition: .3s;
+}
+.team-content img{
+    width:250px;
+}
+/* =====FOOTER START======= */
+.footer{
+    background-color: #606a64;
+    padding: 100px 0px;
+    color: white;
+}
+.footer-content{
+    width: 600px;
+    margin: auto;
+}
+.footer h1{
+    font-size: 35px;
+}
+.footer p{
+    margin: 10px 0px;
+    line-height: 25px;
+}
+.footer a{
+    background-color: #00bc9c;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    transition: .5s;
+}
+.footer a:hover{
+    background-color: #294766;
+}
+/* =====FOOTER BOTTOM START======= */
+.footer-bottom{
+    background-color: black;
+    padding: 30px 0px;
+    color:rgba(255, 255, 255, 0.798);
+    
+}
+.footer-bottom{
+    font-size: 15px;
+}
